@@ -7,13 +7,16 @@ require "acts_as_page/version"
 Gem::Specification.new do |s|
   s.name        = "acts_as_page"
   s.version     = ActsAsPage::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ActsAsPage."
-  s.description = "TODO: Description of ActsAsPage."
+  s.authors     = ["Max Konin"]
+  s.email       = ["maxim21214@gmail.com"]
+  s.homepage    = "https://github.com/max-konin/acts_as_page"
+  s.summary     = "Acts as page for mongoid models"
+  s.description = "Acts as page for mongoid models"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.mb"]
   s.test_files = Dir["spec/**/*"]
-  s.add_dependency "rails", "~> 4.0.6"
+  s.add_dependency "rails", "~> 4.0.0"
+  s.add_dependency 'mongoid'
+  s.add_dependency 'mongoid_slug'
+  s.add_dependency 'mongoid_orderable'
 end

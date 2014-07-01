@@ -4,18 +4,17 @@ module ActsAsPage
   extend ActiveSupport::Concern
 
   included do
+    include Mongoid::Orderable
+    include Mongoid::Slug
+
     field :name
     embeds_one :seo, class_name: 'ActsAsPage::Seo', as: :page
 
     accepts_nested_attributes_for :seo
 
-    after_initialize :init_seo
-  end
-
-  protected
-    def init_seo
-      self.build_seo(title: name) if seo.nil?
+    after_initialize do |o|
+      o.build_seo(title: name) if o.seo.nil?
     end
-
+  end
 end
 
