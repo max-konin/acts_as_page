@@ -8,7 +8,7 @@ Acts As Page
 Add the following to your `Gemfile`:
 
 ```ruby
-gem 'acts_as_page'
+gem 'mongoid_acts_as_page'
 ```
 
 Run bundle install:

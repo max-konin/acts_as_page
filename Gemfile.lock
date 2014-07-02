@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    acts_as_page (0.0.1)
+    mongoid_acts_as_page (0.5.1)
       mongoid
       mongoid_orderable
       mongoid_slug
@@ -126,10 +126,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  acts_as_page!
   database_cleaner
   factory_girl_rails
   mongoid
+  mongoid_acts_as_page!
   mongoid_orderable
   mongoid_slug
   rails

@@ -5,7 +5,7 @@ require "acts_as_page/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "acts_as_page"
+  s.name        = "mongoid_acts_as_page"
   s.version     = ActsAsPage::VERSION
   s.authors     = ["Max Konin"]
   s.email       = ["maxim21214@gmail.com"]
