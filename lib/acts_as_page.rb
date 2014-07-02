@@ -8,6 +8,7 @@ module ActsAsPage
     include Mongoid::Slug
 
     field :name
+    field :text, default: ''
     embeds_one :seo, class_name: 'ActsAsPage::Seo', as: :page
 
     accepts_nested_attributes_for :seo
@@ -15,6 +16,8 @@ module ActsAsPage
     after_initialize do |o|
       o.build_seo(title: name) if o.seo.nil?
     end
+
+    validates :name, presence: true, uniqueness: true
   end
 end
 
