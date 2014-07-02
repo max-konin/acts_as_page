@@ -28,14 +28,14 @@ include ActsAsPage
 You can use field "name" to set or get name of page:
 
 ```ruby
-page = YourMadel.new name: 'new_page'
+page = YourModel.new name: 'new_page'
 page.name #=> new page
 ```
 
 Use method 'seo' for get or set seo information of the page like a title, keywords or description 
 
 ```ruby
-page = YourMadel.new name: 'new_page'
+page = YourModel.new name: 'new_page'
 page.seo.title #=> new page
 ```
 
