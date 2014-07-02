@@ -9,6 +9,10 @@ module ActsAsPage
 
     field :name
     field :text, default: ''
+
+    orderable
+    slug :name
+
     embeds_one :seo, class_name: 'ActsAsPage::Seo', as: :page
 
     accepts_nested_attributes_for :seo
