@@ -1,3 +1,5 @@
+require 'mongoid_orderable'
+require 'mongoid_slug'
 require 'acts_as_page/seo'
 
 module ActsAsPage
