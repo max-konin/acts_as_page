@@ -15,7 +15,6 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.mb"]
   s.test_files = Dir["spec/**/*"]
-  s.add_dependency "rails", "~> 4.0.0"
   s.add_dependency 'mongoid'
   s.add_dependency 'mongoid_slug'
   s.add_dependency 'mongoid_orderable'
